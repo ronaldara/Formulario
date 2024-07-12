@@ -39,6 +39,10 @@ td.highlight {
     background-color: #f2f2f2;
 }
 
+.hidden {
+    display: none;
+}
+
 .modal {
     display: none;
     position: fixed;
