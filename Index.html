@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Tabla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="table-container">
+            <button id="toggle-form-btn">Mostrar/Ocultar Formulario</button>
+            <button id="show-modal-btn">Mostrar Modal</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td class="highlight">Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email"><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna A</th>
+                        <th>Columna B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato A1</td>
+                        <td class="highlight">Dato B1</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">Dato A2</td>
+                        <td>Dato B2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
